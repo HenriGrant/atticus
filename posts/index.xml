@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Atticus Abstract</title>
+    <title>Posts on Henri Grant</title>
     <link>http://www.atticusabstract.net/posts/</link>
-    <description>Recent content in Posts on Atticus Abstract</description>
+    <description>Recent content in Posts on Henri Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 13:57:17 -0400</lastBuildDate><atom:link href="http://www.atticusabstract.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 15:00:28 -0400</lastBuildDate><atom:link href="http://www.atticusabstract.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post</title>
-      <link>http://www.atticusabstract.net/posts/post/</link>
-      <pubDate>Sun, 14 May 2023 13:57:17 -0400</pubDate>
+      <title>Kotlin Notes</title>
+      <link>http://www.atticusabstract.net/posts/kotlin_notes/</link>
+      <pubDate>Sun, 14 May 2023 15:00:28 -0400</pubDate>
       
-      <guid>http://www.atticusabstract.net/posts/post/</guid>
-      <description></description>
+      <guid>http://www.atticusabstract.net/posts/kotlin_notes/</guid>
+      <description>Kotlin Variables Type Bits Value range
+Byte 8 bits -128 to 127
+Short 16 bits -32768 to 32767
+Int 32 bits -2147483648 to 2147483647
+Long 64 bits -huge to (huge - 1)
+Every numeric type has the following conversion functions:
+toByte(), toShort(), toInt(), toLong(), toFloat() and toDouble().
+var = variable, val = constant
+for printing, println(&amp;quot;$var&amp;quot;) the $ tells Kotlin that it is a variable.
+var hugeNumber = 6L &amp;ndash; Long var binNum = 0b10 &amp;ndash; binary number var floatNum = 129.</description>
     </item>
     
   </channel>

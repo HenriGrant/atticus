@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Kotlin Notes</title>
+    <meta name="description" content="">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://www.atticusabstract.net/posts/kotlin_notes/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kotlin Notes">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://www.atticusabstract.net/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://www.atticusabstract.net/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kotlin Notes">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="http://www.atticusabstract.net/posts/kotlin_notes/">
+    <meta property="twitter:url" content="http://www.atticusabstract.net/posts/kotlin_notes/">
+    <meta name="twitter:image" content="http://www.atticusabstract.net/avatar.jpg">
+
+    
+    <link rel="canonical" href="http://www.atticusabstract.net/posts/kotlin_notes/" />
+
+    <link rel="stylesheet" type="text/css" href="http://www.atticusabstract.net//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="http://www.atticusabstract.net//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="http://www.atticusabstract.net//css/dark.css">
+
+    <script src="http://www.atticusabstract.net//js/svg-injector.min.js"></script>
+    <script src="http://www.atticusabstract.net//js/feather-icons.min.js"></script>
+    <script src="http://www.atticusabstract.net//js/main.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://www.atticusabstract.net/">
+                <img src="http://www.atticusabstract.net/avatar.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://www.atticusabstract.net/">Henri Grant</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://www.atticusabstract.net/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://www.atticusabstract.net/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/henrigrant"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://www.atticusabstract.net/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://www.atticusabstract.net/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/henrigrant"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Kotlin Notes</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            May 14, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="kotlin">Kotlin</h1>
+<h2 id="variables">Variables</h2>
+<p>Type    Bits      Value range</p>
+<p>Byte    8 bits    -128 to 127</p>
+<p>Short   16 bits   -32768 to 32767</p>
+<p>Int     32  bits  -2147483648 to 2147483647</p>
+<p>Long    64 bits   -huge to (huge - 1)</p>
+<p>Every numeric type has the following conversion functions:</p>
+<p><code>toByte()</code>, <code>toShort()</code>, <code>toInt()</code>, <code>toLong()</code>, <code>toFloat()</code> and toDouble().</p>
+<p><code>var</code> = variable, <code>val</code> = constant</p>
+<p>for printing, <code>println(&quot;$var&quot;)</code> the <code>$</code> tells Kotlin that it is a variable.</p>
+<p><code>var hugeNumber = 6L</code> &ndash; Long
+<code>var binNum = 0b10</code> &ndash; binary number
+<code>var floatNum = 129.5F</code> &ndash; float
+<code>var doubleNum = 123.0</code> double
+<code>var letter = 'D'</code> char
+<code>var name = &quot;Fido</code> string</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> smallNum: Short <span style="color:#75715e">// declare a short var
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> tinyNum: Byte   <span style="color:#75715e">// declare a Byte var
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> z: Short = <span style="color:#ae81ff">6</span>    <span style="color:#75715e">// declare a short AND assign value
+</span></span></span></code></pre></div><h2 id="printing">Printing</h2>
+<p><code>print()</code> prints on the same line, while <code>println()</code> prints on a new line</p>
+<h2 id="expression-style-if">Expression Style If</h2>
+<p>while this is best practice, for some reason Kotlin can change this into an expression. I hear it is recommended to NOT put IF statements inside PRINTLN, because it READS BAD.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (x &gt; y) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;x is greater than y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;x is not greater than y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>can be rewritten as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>println(<span style="color:#66d9ef">if</span> (x &gt; y) <span style="color:#e6db74">&#34;x is greater than y&#34;</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;x is not greater than y&#34;</span>)
+</span></span></code></pre></div><p>&ldquo;Unlike the case of some other programming languages, Kotlin&rsquo;s if is an expression, not a statement. This means it can return a value as a result of computations. The result must be the last expression in the body.&rdquo; - hyperskill kotlin core thing.</p>
+<h2 id="arrays">Arrays</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> myArray = arrayOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>) 
+</span></span><span style="display:flex;"><span>println(myArray[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>myArray.size <span style="color:#75715e">// size of array
+</span></span></span></code></pre></div><p>You can modify one of the array&rsquo;s values later too.</p>
+<p>for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> stringArray = arrayOf(<span style="color:#e6db74">&#34;Hi there&#34;</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#e6db74">&#34;Goodbye&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>stringArray[<span style="color:#ae81ff">2</span>] = <span style="color:#e6db74">&#34;Hey&#34;</span>
+</span></span></code></pre></div><p>Goodbye would be turned into Hey
+You cannot change the type, though.</p>
+<p>explicitly define array&rsquo;s type:</p>
+<p><code>var myArray: Array&lt;Byte&gt; = arrayOf(1, 2, 3)</code></p>
+<p>you can have a VAR array reference a new object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> myArray = arrayOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>myArray = arrayOf(<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>)
+</span></span></code></pre></div><p>for a VAL array, you can only reference the same array, but you can change the individual values of the array.</p>
+<h2 id="strings">Strings</h2>
+<p>You can also use String templates to refer to an object’s properties, or call its functions. In this case, you enclose the expression in curly braces.</p>
+<p>Griffiths, Dawn; Griffiths, David. Head First Kotlin (p. 142). O&rsquo;Reilly Media. Kindle Edition.</p>
+<p><code>var arraySize = &quot;myArray has ${myArray.size} items</code></p>
+<h2 id="functions">Functions</h2>
+<p>Func with no return value:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">printSum</span>(int1: Int, int2: Int): Unit {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> result = int1 + int2
+</span></span><span style="display:flex;"><span>    println(result)
+</span></span><span style="display:flex;"><span> } 
+</span></span></code></pre></div><p>you use unit to tell Kotlin that the function has no return value.</p>
+<h3 id="single-expression-functions">single expression functions:</h3>
+<p><code>fun sum(a: Int, b: Int): Int = a + b</code>
+<code>fun sum(a: Int, b: Int) = a + b</code></p>
+<h3 id="idiom">Idiom:</h3>
+<p>These are the same:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">theAnswer</span>() = <span style="color:#ae81ff">42</span>   <span style="color:#75715e">// short and clear
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">..</span>.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">theAnswer</span>(): Int { <span style="color:#75715e">// equivalent common function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="when">When</h2>
+<p>when is basically a C++ switch—case</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> number = <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">when</span> (number) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;One&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Two&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">3</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Three&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">4</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Four&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Number is greater than four&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When can also be an expression:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> number = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> message = <span style="color:#66d9ef">when</span> (number) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;One&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;Two&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">3</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;Three&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">4</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;Four&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;Number is greater than four&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>println(message) <span style="color:#75715e">// Output: Three
+</span></span></span></code></pre></div><p>When can also be used with ranges and conditions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> number = <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">when</span> {
+</span></span><span style="display:flex;"><span>    number &lt; <span style="color:#ae81ff">0</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Negative number&#34;</span>)
+</span></span><span style="display:flex;"><span>    number <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">10</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Number between 1 and 10&#34;</span>)
+</span></span><span style="display:flex;"><span>    number % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Even number&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#f92672">-&gt;</span> println(<span style="color:#e6db74">&#34;Odd number greater than 10&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="for-loop">For loop</h2>
+<p><code> until</code>, <code>downTo </code> - will exclude the number given, but go until that number. either up or down</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (x <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">10</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// your code goes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>^ will include ten, while using <code>until</code> will not</p>
+<h2 id="init">Init</h2>
+<p>If you need to initialize a property to something more complex than a simple expression, or if there’s extra code you want to run when each object is created, you can use one or more initializer blocks. Initializer blocks are executed when the object is initialized, immediately after the constructor is called, and they’re prefixed with the init keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">init</span> {
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;Dog </span><span style="color:#e6db74">$name</span><span style="color:#e6db74"> has been created.&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>you must initialize properties before you try to use them.</strong></p>
+<h2 id="empty-constructor">Empty Constructor</h2>
+<p>you can create a class without parameters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Duck</span> {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">quack</span>() {
+</span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;Quack! Quack! Quack!&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When you define a class with no constructor, the compiler secretly writes one for you. It adds an empty constructor (a constructor with no parameters) to your compiled code. (Head First)</p>
+<h2 id="getters-and-setters-validation-property-values">Getters and Setters (Validation Property Values)</h2>
+<p>If you want to tweak a property’s return value, or validate a value before it gets assigned to a property, you can write your own getters and setters. (Head First)</p>
+<p>Also called accessors and mutators.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> weightInKgs: Double
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">get</span>() = weight / <span style="color:#ae81ff">2.2</span>
+</span></span></code></pre></div><p>example of a setter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> weight = weight_param
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span>(<span style="color:#66d9ef">value</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> &gt; <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">field</span> = <span style="color:#66d9ef">value</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>this setter makes sure the number is positive.</p>
+<p>you use field to prevent infinite loops.</p>
+<h2 id="recursion">Recursion!!!</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#75715e">// will add up numbers from the inputted number all the way to one. for example, if the user inputs 5,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// it will add up 5+4+3+2+1=15
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// recursion function instead of for loop, fewer lines of code.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">sumUp</span>(num: Int): Int {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (num<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">return</span> num <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> num + sumUp(num - <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(args: Array&lt;String&gt;) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> userInt: Int
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;Please input an integer!&#34;</span>)
+</span></span><span style="display:flex;"><span>    userInt= readln().toInt()
+</span></span><span style="display:flex;"><span>    println(sumUp(userInt))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>this is a working example of recursion</p>
+<h1 id="references">References:</h1>
+<p><a href="https://hyperskill.org/tracks/18">https://hyperskill.org/tracks/18</a></p>
+<p>Griffiths, Dawn; Griffiths, David. Head First Kotlin. O&rsquo;Reilly Media. Kindle Edition.</p>
+<p>Documentation:</p>
+<p><a href="https://kotlinlang.org/docs/home.html">https://kotlinlang.org/docs/home.html</a></p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    <span>&copy; 2023 </span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
