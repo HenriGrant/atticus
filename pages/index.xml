@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Books on Henri Grant</title>
+    <title>Pages on Henri Grant</title>
     <link>http://www.atticusabstract.net/pages/</link>
-    <description>Recent content in Books on Henri Grant</description>
+    <description>Recent content in Pages on Henri Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://www.atticusabstract.net/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recommended Resources</title>
+      <link>http://www.atticusabstract.net/pages/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.atticusabstract.net/pages/resources/</guid>
+      <description>Project Gutenburg This is a website that provides public domain ebooks for free. I recommend this resource for anyone looking to buy books in the public domain, search for it here first.
+https://www.gutenberg.org/
+Local Libraries Libraries are a great way to read, watch movies, and now even play some games (mainly for demoing). If you want to check out a book or movie before buying, the library is the place to go.</description>
+    </item>
+    
   </channel>
 </rss>
