@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Henri Grant</title>
-    <link>http://www.atticusabstract.net/</link>
+    <link>https://www.atticusabstract.net/</link>
     <description>Recent content on Henri Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 15:00:28 -0400</lastBuildDate><atom:link href="http://www.atticusabstract.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 15:00:28 -0400</lastBuildDate><atom:link href="https://www.atticusabstract.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kotlin Notes</title>
-      <link>http://www.atticusabstract.net/posts/kotlin_notes/</link>
+      <link>https://www.atticusabstract.net/posts/kotlin_notes/</link>
       <pubDate>Sun, 14 May 2023 15:00:28 -0400</pubDate>
       
-      <guid>http://www.atticusabstract.net/posts/kotlin_notes/</guid>
+      <guid>https://www.atticusabstract.net/posts/kotlin_notes/</guid>
       <description>Kotlin Variables Type Bits Value range
 Byte 8 bits -128 to 127
 Short 16 bits -32768 to 32767
@@ -27,10 +27,10 @@ var hugeNumber = 6L &amp;ndash; Long var binNum = 0b10 &amp;ndash; binary number
     
     <item>
       <title>Recommended Resources</title>
-      <link>http://www.atticusabstract.net/pages/resources/</link>
+      <link>https://www.atticusabstract.net/pages/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.atticusabstract.net/pages/resources/</guid>
+      <guid>https://www.atticusabstract.net/pages/resources/</guid>
       <description>test Project Gutenburg This is a website that provides public domain ebooks for free. I recommend this resource for anyone looking to buy books in the public domain, search for it here first.
 https://www.gutenberg.org/
 Local Libraries Libraries are a great way to read, watch movies, and now even play some games (mainly for demoing). If you want to check out a book or movie before buying, the library is the place to go.</description>

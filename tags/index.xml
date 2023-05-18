@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Henri Grant</title>
-    <link>http://www.atticusabstract.net/tags/</link>
+    <link>https://www.atticusabstract.net/tags/</link>
     <description>Recent content in Tags on Henri Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 15:00:28 -0400</lastBuildDate><atom:link href="http://www.atticusabstract.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 15:00:28 -0400</lastBuildDate><atom:link href="https://www.atticusabstract.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kotlin</title>
-      <link>http://www.atticusabstract.net/tags/kotlin/</link>
+      <link>https://www.atticusabstract.net/tags/kotlin/</link>
       <pubDate>Sun, 14 May 2023 15:00:28 -0400</pubDate>
       
-      <guid>http://www.atticusabstract.net/tags/kotlin/</guid>
+      <guid>https://www.atticusabstract.net/tags/kotlin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>notes</title>
-      <link>http://www.atticusabstract.net/tags/notes/</link>
+      <link>https://www.atticusabstract.net/tags/notes/</link>
       <pubDate>Sun, 14 May 2023 15:00:28 -0400</pubDate>
       
-      <guid>http://www.atticusabstract.net/tags/notes/</guid>
+      <guid>https://www.atticusabstract.net/tags/notes/</guid>
       <description></description>
     </item>
     
