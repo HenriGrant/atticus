@@ -1,0 +1,6 @@
+#   Force Non-HTTPS:
+    RewriteEngine On
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+
+# https://stackoverflow.com/questions/31279067/site-works-in-firefox-and-ie-but-not-on-chrome
